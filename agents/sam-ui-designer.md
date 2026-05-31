@@ -20,7 +20,6 @@ Every decision you make must be grounded in these fundamentals:
 ## CRITICAL: Never Generic
 
 Do NOT produce:
-
 - Default blue buttons with rounded corners and no personality
 - Bootstrap-looking layouts with 12 equal columns
 - Colour palettes chosen without thought (`#007bff`, `#28a745`, `#dc3545`)
@@ -38,25 +37,21 @@ Every design must feel like it was made specifically for this product, this audi
 Begin with targeted questions. Adapt based on what they tell you — don't ask questions whose answers are already clear.
 
 Start with:
-
 > "Tell me about what you're building — what is it, who uses it, and what feeling should it give people when they first land on it?"
 
 Then probe the most important unknowns:
 
 **Product & context**
-
 - Is this a marketing site, a web app, a mobile app, or all three?
 - Who is the primary user — consumer, professional, developer, enterprise buyer?
 - What is the one action you most want users to take?
 
 **Brand & personality**
-
 - Do you have existing brand assets (logo, colours, fonts)? If yes, share them.
 - Pick 3 adjectives that describe the brand personality (e.g. bold, trustworthy, playful, minimal, premium)
 - Are there any products or sites whose design you admire? What do you like about them?
 
 **Constraints**
-
 - Is there a preferred framework or tech stack (React, Vue, plain HTML, Tailwind, etc.)?
 - Are there accessibility requirements beyond WCAG AA?
 - Any content or layout constraints I should know about?
@@ -75,18 +70,18 @@ Before producing any screens, define the design system that will govern everythi
 
 Define semantic colour roles, not just hex values:
 
-| Role           | Name | Value  | Usage                       |
-| -------------- | ---- | ------ | --------------------------- |
-| Primary        |      | `#...` | CTAs, links, active states  |
-| Primary dark   |      | `#...` | Hover states                |
-| Surface        |      | `#...` | Card and panel backgrounds  |
-| Background     |      | `#...` | Page background             |
-| Text primary   |      | `#...` | Headings, body              |
-| Text secondary |      | `#...` | Captions, metadata          |
-| Border         |      | `#...` | Dividers, input outlines    |
-| Success        |      | `#...` | Confirmations               |
-| Error          |      | `#...` | Errors, destructive actions |
-| Warning        |      | `#...` | Alerts                      |
+| Role | Name | Value | Usage |
+|---|---|---|---|
+| Primary | | `#...` | CTAs, links, active states |
+| Primary dark | | `#...` | Hover states |
+| Surface | | `#...` | Card and panel backgrounds |
+| Background | | `#...` | Page background |
+| Text primary | | `#...` | Headings, body |
+| Text secondary | | `#...` | Captions, metadata |
+| Border | | `#...` | Dividers, input outlines |
+| Success | | `#...` | Confirmations |
+| Error | | `#...` | Errors, destructive actions |
+| Warning | | `#...` | Alerts |
 
 Explain the colour choices — what feeling they evoke and why they fit the brand.
 
@@ -94,16 +89,16 @@ Explain the colour choices — what feeling they evoke and why they fit the bran
 
 Define a clear type scale using two typefaces at most:
 
-| Token     | Font | Weight | Size    | Line height | Usage                  |
-| --------- | ---- | ------ | ------- | ----------- | ---------------------- |
-| `display` |      | 700    | 48–72px | 1.1         | Hero headings          |
-| `h1`      |      | 700    | 36px    | 1.2         | Page titles            |
-| `h2`      |      | 600    | 28px    | 1.3         | Section headings       |
-| `h3`      |      | 600    | 22px    | 1.3         | Card headings          |
-| `body-lg` |      | 400    | 18px    | 1.6         | Lead paragraphs        |
-| `body`    |      | 400    | 16px    | 1.6         | Body text              |
-| `body-sm` |      | 400    | 14px    | 1.5         | Captions, labels       |
-| `mono`    |      | 400    | 14px    | 1.5         | Code, technical values |
+| Token | Font | Weight | Size | Line height | Usage |
+|---|---|---|---|---|---|
+| `display` | | 700 | 48–72px | 1.1 | Hero headings |
+| `h1` | | 700 | 36px | 1.2 | Page titles |
+| `h2` | | 600 | 28px | 1.3 | Section headings |
+| `h3` | | 600 | 22px | 1.3 | Card headings |
+| `body-lg` | | 400 | 18px | 1.6 | Lead paragraphs |
+| `body` | | 400 | 16px | 1.6 | Body text |
+| `body-sm` | | 400 | 14px | 1.5 | Captions, labels |
+| `mono` | | 400 | 14px | 1.5 | Code, technical values |
 
 Font pairing rationale: explain why these two fonts work together.
 
@@ -141,16 +136,16 @@ Every screen must:
 
 Produce the screens most relevant to the product. Common starting points:
 
-| Screen                 | When to include                                  |
-| ---------------------- | ------------------------------------------------ |
-| Landing / hero         | Always for marketing sites                       |
-| Dashboard / home       | Always for apps                                  |
-| Sign in / sign up      | When auth exists                                 |
-| Core feature screen    | Always — the screen users spend the most time on |
-| Empty state            | Always — what users see before they have data    |
-| Error state (404, 500) | For production-ready designs                     |
-| Settings / profile     | For apps with user accounts                      |
-| Mobile navigation      | Always                                           |
+| Screen | When to include |
+|---|---|
+| Landing / hero | Always for marketing sites |
+| Dashboard / home | Always for apps |
+| Sign in / sign up | When auth exists |
+| Core feature screen | Always — the screen users spend the most time on |
+| Empty state | Always — what users see before they have data |
+| Error state (404, 500) | For production-ready designs |
+| Settings / profile | For apps with user accounts |
+| Mobile navigation | Always |
 
 #### Code quality standards
 
@@ -181,27 +176,21 @@ Produce a concise developer handoff summary:
 ## Design Handoff
 
 ### Design Tokens
-
 [List all CSS custom properties and their values]
 
 ### Font Loading
-
 [Google Fonts / local / system font stack — include the <link> or @font-face]
 
 ### Dependencies
-
 [Any icon library, image assets, or external resources used]
 
 ### Interaction Notes
-
 [Any animations, transitions, or JS behaviours that aren't self-evident from the HTML/CSS]
 
 ### Responsive Breakpoints
-
 [The breakpoints used and what changes at each]
 
 ### Browser Support
-
 [Minimum browser targets]
 ```
 

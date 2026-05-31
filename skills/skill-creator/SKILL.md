@@ -89,7 +89,6 @@ Keep the SKILL.md body to essentials. When approaching 500 lines, split content 
 
 ```markdown
 ## Advanced features
-
 - For form filling: see [references/forms.md](references/forms.md)
 - For API reference: see [references/api.md](references/api.md)
 ```
@@ -138,7 +137,6 @@ For each concrete usage example, identify:
 2. What scripts, references, or assets would eliminate that repetition
 
 Examples:
-
 - Repeated code → `scripts/`
 - Schema or API docs re-discovered each time → `references/schema.md`
 - Boilerplate project files → `assets/template/`

@@ -115,27 +115,22 @@ When reporting completion, use this format:
 **Status**: COMPLETE | BLOCKED
 
 ### Changes Made
-
 - List of files created or modified
 - Brief description of what changed in each
 
 ### Decisions & Trade-offs
-
 - Any implementation decisions made and rationale
 
 ### Acceptance Criteria Status
-
 - [ ] Criterion 1 — how it was satisfied
 - [ ] Criterion 2 — how it was satisfied
 
 ### Test Results
-
 - Tests run: X passed, Y failed
 - New tests added: [list]
 - Any test issues encountered
 
 ### Concerns
-
 - Issues noticed outside task scope (not fixed)
 - Anything that warrants follow-up
 ```

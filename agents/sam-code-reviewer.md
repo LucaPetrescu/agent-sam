@@ -84,14 +84,12 @@ Always produce a report in this exact structure:
 **Summary**: [Brief overview of code quality and main findings]
 
 ### Automated Validation
-
 - Lint: PASS | FAIL — [error output if failed]
 - Format: PASS | FAIL — [error output if failed]
 - Tests: PASS | FAIL — [error output if failed]
 - Build: PASS | FAIL — [error output if failed]
 
 ### Acceptance Criteria Verification
-
 - [x] Criterion 1 — PASS: [explanation]
 - [ ] Criterion 2 — FAIL: [explanation]
 - [~] Criterion 3 — PARTIAL: [explanation]
@@ -99,7 +97,6 @@ Always produce a report in this exact structure:
 ### Blockers (Must Fix)
 
 #### B1: [Short title]
-
 - **File**: `path/to/file.ts`
 - **Location**: Line X or function name
 - **Issue**: Clear description of the problem
@@ -108,7 +105,6 @@ Always produce a report in this exact structure:
 ### Warnings (Should Fix)
 
 #### W1: [Short title]
-
 - **File**: `path/to/file.ts`
 - **Location**: Line X or function name
 - **Issue**: Clear description of the problem
@@ -117,12 +113,10 @@ Always produce a report in this exact structure:
 ### Suggestions (Optional)
 
 #### S1: [Short title]
-
 - **File**: `path/to/file.ts`
 - **Description**: Explanation of the suggestion
 
 ### Positive Observations
-
 - [Highlight well-written sections or good practices used]
 ```
 

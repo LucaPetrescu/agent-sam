@@ -11,20 +11,19 @@ This skill covers designing Mermaid diagrams and exporting them as both `.mmd` s
 
 ### Choosing the right diagram type
 
-| Goal                            | Diagram type     | Mermaid keyword   |
-| ------------------------------- | ---------------- | ----------------- |
-| System components and data flow | Flowchart        | `flowchart TD`    |
-| Request/response interactions   | Sequence diagram | `sequenceDiagram` |
-| State transitions               | State diagram    | `stateDiagram-v2` |
-| Data entities and relationships | ER diagram       | `erDiagram`       |
-| Timeline of events              | Gantt            | `gantt`           |
+| Goal | Diagram type | Mermaid keyword |
+|---|---|---|
+| System components and data flow | Flowchart | `flowchart TD` |
+| Request/response interactions | Sequence diagram | `sequenceDiagram` |
+| State transitions | State diagram | `stateDiagram-v2` |
+| Data entities and relationships | ER diagram | `erDiagram` |
+| Timeline of events | Gantt | `gantt` |
 
 ### Flowchart design rules (most common)
 
 Use `flowchart TD` (top-down) as the default for system and architecture diagrams.
 
 **Nodes** — use shape to communicate role:
-
 - `[Rectangle]` — service, component, module
 - `(Rounded)` — start/end point, user, external system
 - `[(Cylinder)]` — database, storage
@@ -33,7 +32,6 @@ Use `flowchart TD` (top-down) as the default for system and architecture diagram
 - `([Stadium])` — external provider, third-party
 
 **Edges** — label every arrow with what is being exchanged:
-
 ```
 A -->|REST / JWT| B
 A -->|SQL| DB
@@ -41,7 +39,6 @@ A -->|events| Queue
 ```
 
 **Grouping** — use `subgraph` to cluster related components:
-
 ```
 subgraph Backend
   API[REST API]

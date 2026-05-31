@@ -1,6 +1,6 @@
 ---
-name: workflows-sam:implement
-description: Implementation-only workflow. Takes a plan file produced by /workflows-sam:plan (or a direct task description) and implements it using the software engineer agent in a review loop. No planning is done here.
+name: workflows:sam-implement
+description: Implementation-only workflow. Takes a plan file produced by /workflows:sam-plan (or a direct task description) and implements it using the software engineer agent in a review loop. No planning is done here.
 model: opus
 argument-hint: [plan-file-path] | [task-description]
 allowed-tools:
@@ -57,7 +57,7 @@ Determine the type of input:
 
 ## Phase 1: Implementation
 
-Spawn the **Software Engineer Agent** (`@agent:software-engineer`) with:
+Spawn the **Software Engineer Agent** (`@agent:sam-software-engineer`) with:
 
 - The full implementation plan and phased steps
 - The tech stack and project conventions
@@ -72,7 +72,7 @@ The engineer will implement each phase of the plan, run available validation com
 
 ## Phase 2: Code Review
 
-Once the engineer reports `COMPLETE`, spawn the **Code Reviewer Agent** (`@agent:code-reviewer`) with:
+Once the engineer reports `COMPLETE`, spawn the **Code Reviewer Agent** (`@agent:sam-code-reviewer`) with:
 
 - The acceptance criteria
 - The list of files created or modified (from the engineer's completion report)
